@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { FaChevronLeft, FaX } from 'react-icons/fa6';
-import { FaChevronRight } from 'react-icons/fa';
+import { FaChevronLeft, FaLocationDot, FaX } from 'react-icons/fa6';
+import { FaChevronRight, FaHeart } from 'react-icons/fa';
 
 const PropertyModal = ({onClose, properties}) => {
   
@@ -43,11 +43,53 @@ const PropertyModal = ({onClose, properties}) => {
           <button onClick={onClose} className='absolute text-white top-10 right-5 -translate-y-1/2 bg-red-500 p-2 rounded-full'>
             <FaX size={20}/>
           </button>
+
+          <div className='absolute bottom-4 right-4 flex items-center gap-4'>
+            <button onClick={() => setIsFavorite(!isFavorite)}
+              className={`bg-white/80 p-2 rounded-full ${isFavorite ? "text-red-500" : "text-gray-500"}`}>
+              <FaHeart/>
+            </button>
+            <div className='bg-black/50 text-white px-3 py-1 rounded-full'>
+              {currentImageIndex + 1} / {images.length}
+            </div>
+          </div>
+        </div>
+
+        <div className='p-6'>
+          <div className='flex items-center gap-2 text-gray-500 text-sm mb-3'>
+            <FaLocationDot className='text-blue-600'/>
+            <span>{currentProperty.location}</span>
+          </div>
+
+          <h2 className='text-2x1 font-bold text-gray-800 mb-2'>
+            {currentProperty.title}</h2>
+            <div className="text-3xl font-bold text-blue-600 mb-4">
+              {currentProperty.price} </div>
+
+            <div className="flex gap-6 mb-6 p-4 bg-gray-50 rounded-lg">
+              <div className="flex items-center gap-2">
+                <div className='flex items-center gap-2'>
+                     <FaBed className='text-blue-600' />
+                         <span className='text-grey-600'>{property.beds} Beds</span>
+                             </div>
+                            <div className='flex items-center gap-2'>
+                                <FaBath className='text-blue-600' />
+                                <span className='text-grey-600'>{property.baths} Baths</span>
+                             </div>
+                            <div className='flex items-center gap-2'>
+                                    <FaRuler className='text-blue-600' />
+                                    <span className='text-grey-600'>{property.sqft} sqft</span>
+
+                            </div>
+                    
+
+              </div>
+            </div>
         </div>
 
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default PropertyModal
