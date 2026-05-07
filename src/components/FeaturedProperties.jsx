@@ -37,15 +37,15 @@ const FeaturedProperties = ({setSelectedProperty}) => {
                             
                             <div className='flex items-center gap-2'>
                                 <FaBed className='text-blue-600' />
-                                <span className='text-grey-600'>{property.beds} Beds</span>
+                                <span className='text-gray-600'>{property.beds} Beds</span>
                              </div>
                             <div className='flex items-center gap-2'>
                                 <FaBath className='text-blue-600' />
-                                <span className='text-grey-600'>{property.baths} Baths</span>
+                                <span className='text-gray-600'>{property.baths} Baths</span>
                              </div>
                             <div className='flex items-center gap-2'>
                                     <FaRuler className='text-blue-600' />
-                                    <span className='text-grey-600'>{property.sqft} sqft</span>
+                                    <span className='text-gray-600'>{property.sqft} sqft</span>
 
                             </div>
                         </div>

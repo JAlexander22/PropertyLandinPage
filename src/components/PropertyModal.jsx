@@ -68,19 +68,25 @@ const PropertyModal = ({onClose, properties}) => {
 
             <div className="flex gap-6 mb-6 p-4 bg-gray-50 rounded-lg">
               <div className="flex items-center gap-2">
+                
                 <div className='flex items-center gap-2'>
-                     <FaBed className='text-blue-600' />
-                         <span className='text-grey-600'>{property.beds} Beds</span>
-                             </div>
-                            <div className='flex items-center gap-2'>
-                                <FaBath className='text-blue-600' />
-                                <span className='text-grey-600'>{property.baths} Baths</span>
-                             </div>
-                            <div className='flex items-center gap-2'>
-                                    <FaRuler className='text-blue-600' />
-                                    <span className='text-grey-600'>{property.sqft} sqft</span>
+                    <FaBed className='text-blue-600' />
+                    <span className='text-gray-600'>{property.beds} Beds</span>
+                </div>
+                            
+                <div className='flex items-center gap-2'>
+                    <FaBath className='text-blue-600' />
+                    <span className='text-gray-600'>{property.baths} Baths</span>
+                </div>
+                            
+                <div className='flex items-center gap-2'>
+                    <FaRuler className='text-blue-600' />
+                    <span className="text-gray-600">{property.sqft} sqft</span>
+                </div>
 
-                            </div>
+                <div className="mb-6">
+                  <h3>Description</h3>
+                </div>
                     
 
               </div>
