@@ -15,9 +15,9 @@ const properties = [
   {
     id: 1,
     image: image1,
-    price: "$950,000",
+    price: "£950,000",
     title: "Elegant Coastal Villa",
-    location: "123 Luxury Lane, Beverly Hills",
+    location: "75 Beaumont Park Drive, Wolverhampton",
     description:
       "An elegant coastal villa with panoramic ocean views, featuring a spacious terrace and luxurious interiors.",
     beds: 4,
@@ -28,8 +28,8 @@ const properties = [
   {
     id: 2,
     image: image2,
-    price: "$1,450,000",
-    title: "Beachfront Paradise",
+    price: "£1,450,000",
+    title: "12 Silver Birch Lane, Hagley",
     location: "456 Beach Drive, Malibu",
     description:
       "A stunning beachfront property with direct access to the sand, perfect for sunbathing and water sports.",
@@ -41,9 +41,9 @@ const properties = [
   {
     id: 3,
     image: image3,
-    price: "$850,000",
+    price: "£850,000",
     title: "Modern Urban Loft",
-    location: "789 City Center, Downtown",
+    location: "19 Wychwood Close, Four Oaks",
     description:
       "A modern loft in the heart of the city, featuring high ceilings and an open floor plan with stylish finishes.",
     beds: 3,
@@ -54,7 +54,7 @@ const properties = [
   {
     id: 4,
     image: image4,
-    price: "$1,100,000",
+    price: "£1,100,000",
     title: "Charming Mountain Retreat",
     location: "321 Highland Road, Hollywood Hills",
     description:
@@ -67,9 +67,9 @@ const properties = [
   {
     id: 5,
     image: image5,
-    price: "$1,800,000",
+    price: "£1,800,000",
     title: "Smart Luxury Home",
-    location: "567 Tech Avenue, Silicon Valley",
+    location: "52 Maple Grove, Harborne, Birmingham",
     description:
       "A state-of-the-art smart home with cutting-edge technology and eco-friendly features, designed for modern living.",
     beds: 6,
@@ -80,9 +80,9 @@ const properties = [
   {
     id: 6,
     image: image6,
-    price: "$700,000",
+    price: "£700,000",
     title: "Family-Friendly Haven",
-    location: "890 Suburban Lane, Santa Monica",
+    location: "14 Willowbrook Drive, Edgbaston, Birmingham",
     description:
       "A family-friendly haven with a large backyard, perfect for kids and pets, located in a quiet neighborhood.",
     beds: 3,
@@ -93,9 +93,9 @@ const properties = [
   {
     id: 7,
     image: image7,
-    price: "$720,000",
+    price: "£720,000",
     title: "Cozy Cottage Retreat",
-    location: "890 Suburban Lane, Santa Monica",
+    location: "27 Ashcroft Avenue, Solihull",
     description:
       "A cozy cottage retreat with a charming garden, ideal for relaxing weekends and family gatherings.",
     beds: 3,
@@ -106,9 +106,9 @@ const properties = [
   {
     id: 8,
     image: image8,
-    price: "$740,000",
+    price: "£740,000",
     title: "Stylish Family Home",
-    location: "890 Suburban Lane, Santa Monica",
+    location: "35 Willowbrook Drive, Edgbaston, Birmingham",
     description:
       "A stylish family home with modern amenities and a spacious layout, perfect for entertaining guests.",
     beds: 3,
@@ -119,9 +119,9 @@ const properties = [
   {
     id: 9,
     image: image9,
-    price: "$760,000",
+    price: "£760,000",
     title: "Chic Suburban Retreat",
-    location: "890 Suburban Lane, Santa Monica",
+    location: "41 Oakmere Gardens, Walsall",
     description:
       "A chic suburban retreat with a contemporary design, featuring a large deck for outdoor entertaining.",
     beds: 3,
@@ -132,9 +132,9 @@ const properties = [
   {
     id: 10,
     image: image10,
-    price: "$780,000",
+    price: "£780,000",
     title: "Elegant Family Residence",
-    location: "890 Suburban Lane, Santa Monica",
+    location: "6 The Paddocks, Streetly",
     description:
       "An elegant family residence with spacious living areas and a beautifully landscaped yard, perfect for family life.",
     beds: 3,
@@ -145,9 +145,9 @@ const properties = [
   {
     id: 11,
     image: image11,
-    price: "$800,000",
+    price: "£800,000",
     title: "Charming Craftsman Home",
-    location: "890 Suburban Lane, Santa Monica",
+    location: "33 Kingsley Manor Road, Knowle",
     description:
       "A charming craftsman home with original woodwork and a welcoming front porch, ideal for family gatherings.",
     beds: 3,
@@ -158,9 +158,9 @@ const properties = [
   {
     id: 12,
     image: image12,
-    price: "$820,000",
+    price: "£820,000",
     title: "Spacious Family Retreat",
-    location: "890 Suburban Lane, Santa Monica",
+    location: "55 Maple Grove, Harborne, Birmingham",
     description:
       "A spacious family retreat with ample room for everyone, featuring a large backyard and a cozy atmosphere.",
     beds: 3,
