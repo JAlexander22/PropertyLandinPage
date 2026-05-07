@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
-import properties from '../properties';
 import { FaChevronLeft, FaX } from 'react-icons/fa6';
 import { FaChevronRight } from 'react-icons/fa';
 
-const PropertyModal = ([onClose, properties]) => {
+const PropertyModal = ({onClose, properties}) => {
   
   const [currentPropertyIndex, setCurrentPropertIndex] = useState(0);
   
@@ -29,15 +28,15 @@ const PropertyModal = ([onClose, properties]) => {
   
   return (
     <div className="fixed inset-0 bg-black/70 backdrop-blur-md flex items-center justify-center z-50 p-4" onClick={onClose}>
-      <div className='relative bg-white rounded-3xl max-w-xl w-full md:max-h-[90vh] overflower-y-auto shadow-2xl' onClick={(e) => e.stopPropagation()}>
-        <div className='relative h-[-300px] md-h-[400px]'>
+      <div className='relative bg-white rounded-3xl max-w-xl w-full md:max-h-[90vh] overflow-y-auto shadow-2xl' onClick={(e) => e.stopPropagation()}>
+        <div className='relative h-[300px] md:h-[400px]'>
           <img src={images[currentImageIndex]} alt="" className='w-full h-full object-cover' />
 
-          <button onclick={prevImage} className='absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full hover:bg-white'>
+          <button onClick={prevImage} className='absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full hover:bg-white'>
             <FaChevronLeft size={20}/>
           </button>
 
-          <button onclick={nextImage} className='absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full hover:bg-white'>
+          <button onClick={nextImage} className='absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 p-2 rounded-full hover:bg-white'>
             <FaChevronRight size={20}/>
           </button>
 
