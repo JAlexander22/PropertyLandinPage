@@ -20,7 +20,9 @@ function App() {
 
       <Footer />
 
-
+      {selectedProperty && (
+        <PropertyModal properties={[selectedProperty]} onClose={()=> setSelectedProperty(null)} />
+      )}
 
     </div>
   );
