@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { FaChevronLeft, FaLocationDot, FaX } from 'react-icons/fa6';
 import { FaChevronRight, FaHeart, FaRuler, FaBath, FaBed } from 'react-icons/fa';
 
-const PropertyModal = ({onClose, properties}) => {
+const PropertyModal = ({ onClose, properties }) => {
   
   const [currentPropertyIndex, setCurrentPropertIndex] = useState(0);
   
@@ -68,7 +68,6 @@ const PropertyModal = ({onClose, properties}) => {
             </div>
 
             <div className="flex gap-6 mb-6 p-4 bg-gray-50 rounded-lg">
-              <div className="flex items-center gap-2">
                 
                 <div className='flex items-center gap-2'>
                     <FaBed className='text-blue-600' />
@@ -92,10 +91,9 @@ const PropertyModal = ({onClose, properties}) => {
                 </div>
 
                 <button className="w-full bg-blue-600 text-white py-3 rounded-2xl font-semibold hover:bg-blue-700 transition-colors">Contact Agent</button>    
+          </div>
         </div>
-
       </div>
-    </div>
   );
 };
 
