@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { FaChevronLeft, FaLocationDot, FaX } from 'react-icons/fa6';
-import { FaChevronRight, FaHeart } from 'react-icons/fa';
+import { FaChevronRight, FaHeart, FaRuler, FaBath, FaBed } from 'react-icons/fa';
 
 const PropertyModal = ({onClose, properties}) => {
   
@@ -64,33 +64,34 @@ const PropertyModal = ({onClose, properties}) => {
           <h2 className='text-2x1 font-bold text-gray-800 mb-2'>
             {currentProperty.title}</h2>
             <div className="text-3xl font-bold text-blue-600 mb-4">
-              {currentProperty.price} </div>
+              {currentProperty.price} 
+            </div>
 
             <div className="flex gap-6 mb-6 p-4 bg-gray-50 rounded-lg">
               <div className="flex items-center gap-2">
                 
                 <div className='flex items-center gap-2'>
                     <FaBed className='text-blue-600' />
-                    <span className='text-gray-600'>{property.beds} Beds</span>
+                    <span className='text-gray-600'>{currentProperty.beds} Beds</span>
                 </div>
                             
                 <div className='flex items-center gap-2'>
                     <FaBath className='text-blue-600' />
-                    <span className='text-gray-600'>{property.baths} Baths</span>
+                    <span className='text-gray-600'>{currentProperty.baths} Baths</span>
                 </div>
                             
                 <div className='flex items-center gap-2'>
                     <FaRuler className='text-blue-600' />
-                    <span className="text-gray-600">{property.sqft} sqft</span>
+                    <span className="text-gray-600">{currentProperty.sqft} sqft</span>
+                </div>
                 </div>
 
                 <div className="mb-6">
-                  <h3>Description</h3>
+                  <h3 className="font-semibold mb-2">Description</h3>
+                  <p className="text-gray-600">{currentProperty.description}</p>
                 </div>
-                    
 
-              </div>
-            </div>
+                <button className="w-full bg-blue-600 text-white py-3 rounded-2xl font-semibold hover:bg-blue-700 transition-colors">Contact Agent</button>    
         </div>
 
       </div>
