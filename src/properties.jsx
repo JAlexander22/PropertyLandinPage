@@ -18,6 +18,8 @@ const properties = [
     price: "£950,000",
     title: "Elegant Coastal Villa",
     location: "75 Beaumont Park Drive, Wolverhampton",
+    monthlyRent: "£1,250 pcm",
+    annualROI: "5.1%",
     description:
       "An elegant coastal villa with panoramic ocean views, featuring a spacious terrace and luxurious interiors.",
     beds: 4,
@@ -31,6 +33,8 @@ const properties = [
     price: "£1,450,000",
     title: "12 Silver Birch Lane, Hagley",
     location: "456 Beach Drive, Malibu",
+    monthlyRent: "£1,450 pcm",
+    annualROI: "5.8%",
     description:
       "A stunning beachfront property with direct access to the sand, perfect for sunbathing and water sports.",
     beds: 5,
@@ -44,6 +48,8 @@ const properties = [
     price: "£850,000",
     title: "Modern Urban Loft",
     location: "19 Wychwood Close, Four Oaks",
+    monthlyRent: "£1,800 pcm",
+    annualROI: "6.3%",
     description:
       "A modern loft in the heart of the city, featuring high ceilings and an open floor plan with stylish finishes.",
     beds: 3,
@@ -57,6 +63,8 @@ const properties = [
     price: "£1,100,000",
     title: "Charming Mountain Retreat",
     location: "321 Highland Road, Hollywood Hills",
+    monthlyRent: "£2,100 pcm",
+    annualROI: "6.9%",
     description:
       "A charming retreat nestled in the mountains, offering breathtaking views and a cozy fireplace for winter nights.",
     beds: 4,
@@ -70,6 +78,8 @@ const properties = [
     price: "£1,800,000",
     title: "Smart Luxury Home",
     location: "52 Maple Grove, Harborne, Birmingham",
+    monthlyRent: "£2,400 pcm",
+    annualROI: "7.2%",
     description:
       "A state-of-the-art smart home with cutting-edge technology and eco-friendly features, designed for modern living.",
     beds: 6,
@@ -83,6 +93,8 @@ const properties = [
     price: "£700,000",
     title: "Family-Friendly Haven",
     location: "14 Willowbrook Drive, Edgbaston, Birmingham",
+    monthlyRent: "£2,750 pcm",
+    annualROI: "7.8%",
     description:
       "A family-friendly haven with a large backyard, perfect for kids and pets, located in a quiet neighborhood.",
     beds: 3,
@@ -96,6 +108,8 @@ const properties = [
     price: "£720,000",
     title: "Cozy Cottage Retreat",
     location: "27 Ashcroft Avenue, Solihull",
+    monthlyRent: "£3,000 pcm",
+    annualROI: "8.1%",
     description:
       "A cozy cottage retreat with a charming garden, ideal for relaxing weekends and family gatherings.",
     beds: 3,
@@ -109,6 +123,8 @@ const properties = [
     price: "£740,000",
     title: "Stylish Family Home",
     location: "35 Willowbrook Drive, Edgbaston, Birmingham",
+    monthlyRent: "£3,250 pcm",
+    annualROI: "8.4%",
     description:
       "A stylish family home with modern amenities and a spacious layout, perfect for entertaining guests.",
     beds: 3,
@@ -122,6 +138,8 @@ const properties = [
     price: "£760,000",
     title: "Chic Suburban Retreat",
     location: "41 Oakmere Gardens, Walsall",
+    monthlyRent: "£3,600 pcm",
+    annualROI: "8.9%",
     description:
       "A chic suburban retreat with a contemporary design, featuring a large deck for outdoor entertaining.",
     beds: 3,
@@ -135,6 +153,8 @@ const properties = [
     price: "£780,000",
     title: "Elegant Family Residence",
     location: "6 The Paddocks, Streetly",
+    monthlyRent: "£4,100 pcm",
+    annualROI: "9.3%",
     description:
       "An elegant family residence with spacious living areas and a beautifully landscaped yard, perfect for family life.",
     beds: 3,
@@ -148,6 +168,8 @@ const properties = [
     price: "£800,000",
     title: "Charming Craftsman Home",
     location: "33 Kingsley Manor Road, Knowle",
+    monthlyRent: "£4,500 pcm",
+    annualROI: "9.8%",
     description:
       "A charming craftsman home with original woodwork and a welcoming front porch, ideal for family gatherings.",
     beds: 3,
@@ -161,6 +183,8 @@ const properties = [
     price: "£820,000",
     title: "Spacious Family Retreat",
     location: "55 Maple Grove, Harborne, Birmingham",
+    monthlyRent: "£5,200 pcm",
+    annualROI: "10.4%",
     description:
       "A spacious family retreat with ample room for everyone, featuring a large backyard and a cozy atmosphere.",
     beds: 3,

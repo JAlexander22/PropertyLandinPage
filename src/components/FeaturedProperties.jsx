@@ -32,6 +32,13 @@ const FeaturedProperties = ({setSelectedProperty}) => {
                         <div className="text-2xl font-bold text-blue-600 mb-2">
                             {property.price}
                         </div>
+                        <div className="text-gray-600">
+                            {property.monthlyRent}
+                        </div>
+
+                        <div className="text-green-600 font-semibold mb-4">
+                            {property.annualROI} Annual ROI
+                        </div>
                         <h3 className="text-xl font-semibold mb-4 text-gray-800">{property.title} </h3>
                         
                         <div className="flex justify-between items-center p-4 bg-blue-50 rounded-lg">
