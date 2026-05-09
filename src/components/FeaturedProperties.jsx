@@ -14,8 +14,10 @@ const FeaturedProperties = ({setSelectedProperty}) => {
             {properties.map((property) => (
                 <div key={property.id}
                 className='bg-white rounded-2xl drop-shadow-lg overflow-hidden hover:drop-shadow-xl hover:scale-105 transition-all duration-300 relative group cursor-pointer'
-                onClick={() => setSelectedProperty(property)}
-                >
+                  onClick={() => {
+                        setSelectedProperty(property);
+                        trackEvent("property_card_clicked", "Property", property.title);
+                }} >
                     <div className='relative'>
                         <img src={property.image} className='w-full h-72 object-cover group-hover:scale-105 transition-transform duration-300' alt="" />
                         <button className='absolute top-4 right-4 p-2 rounded-full bg-white/70 hover:bg-white transition-colors duration-200'>
@@ -57,18 +59,26 @@ const FeaturedProperties = ({setSelectedProperty}) => {
                             </div>
                          
                         </div>
-                        <div>
+                                <div className="flex gap-3 mt-4">
+                                <button
+                                    onClick={() => {
+                                        setSelectedProperty(property);
+                                        trackEvent("view_details_clicked", "Property", property.title);
+                                        }}
+                                        className="mt-4 bg-gray-600 font-semibold text-white px-3 py-1 rounded-xl hover:bg-blue-700 transition-colors">
+                                    View Details
+                                </button>
                                <button
-                                onClick={(e) => {
-                                    e.stopPropagation();
-                                    trackEvent(
-                                    "enquire_now_clicked",
-                                    "Property",
-                                    property.title
-                                    );
-                                    setSelectedProperty(property);
+                                    onClick={(e) => {
+                                        e.stopPropagation();
+                                        trackEvent(
+                                        "enquire_now_clicked",
+                                        "Property",
+                                        property.title
+                                        );
+                                    
                                     document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
-                                }}
+                                    }}
                                 className="w-full mt-4 bg-blue-600 text-white px-4 py-3 rounded-xl font-semibold hover:bg-blue-700 transition-colors">
                                 Enquire Now
                             </button>

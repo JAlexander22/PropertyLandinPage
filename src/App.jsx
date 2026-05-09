@@ -5,11 +5,16 @@ import Home from "./components/Home";
 import FeaturedProperties from "./components/FeaturedProperties";
 import { useState } from "react";
 import EnquiryForm from "./components/EnquiryForm";
+import { useEffect } from "react";
+import { initGA } from "./analytics";
 
 
 function App() {
 
   const [selectedProperty, setSelectedProperty] = useState(null);
+  useEffect(() => {
+  initGA();
+  }, []);
 
   return ( 
     <div className="min-h-screen w-full bg-gray-50">

@@ -31,8 +31,8 @@ const properties = [
     id: 2,
     image: image2,
     price: "£1,450,000",
-    title: "12 Silver Birch Lane, Hagley",
-    location: "456 Beach Drive, Malibu",
+    title: "Modern Beachfront",
+    location: "12 Silver Birch Lane, Hagley",
     monthlyRent: "£1,450 pcm",
     annualROI: "5.8%",
     description:
