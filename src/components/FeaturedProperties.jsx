@@ -20,7 +20,15 @@ const FeaturedProperties = ({setSelectedProperty}) => {
                 }} >
                     <div className='relative'>
                         <img src={property.image} className='w-full h-72 object-cover group-hover:scale-105 transition-transform duration-300' alt="" />
-                        <button className='absolute top-4 right-4 p-2 rounded-full bg-white/70 hover:bg-white transition-colors duration-200'>
+                        <button  onClick={(e) => {
+                            e.stopPropagation();
+
+                            trackEvent(
+                            "property_favourited",
+                            "Property",
+                            property.title
+                            );
+                        }} className='absolute top-4 right-4 p-2 rounded-full bg-white/70 hover:bg-white transition-colors duration-200'>
                             <FaHeart className='text-gray-600 hover:text-red-500 transition-colours duration-200'/>
                         </button>
                     </div>
