@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import Home from "./components/Home";
 import FeaturedProperties from "./components/FeaturedProperties";
 import { useState } from "react";
+import EnquiryForm from "./components/EnquiryForm";
 
 
 function App() {
@@ -17,7 +18,7 @@ function App() {
       <FeaturedProperties setSelectedProperty={setSelectedProperty}/>
 
       <Contact />
-
+      <EnquiryForm selectedProperty={selectedProperty} />
       <Footer />
 
       {selectedProperty && (

@@ -3,6 +3,7 @@ import properties from '../properties'
 import { FaHeart } from 'react-icons/fa';
 import { FaBath, FaLocationDot, FaRuler } from 'react-icons/fa6';
 import { FaBed } from 'react-icons/fa6';
+import { trackEvent } from '../analytics'
 
 
 const FeaturedProperties = ({setSelectedProperty}) => {
@@ -33,7 +34,7 @@ const FeaturedProperties = ({setSelectedProperty}) => {
                         </div>
                         <h3 className="text-xl font-semibold mb-4 text-gray-800">{property.title} </h3>
                         
-                        <div className="flex justify-between items-center p-3 bg-blue-50 rounded-lg">
+                        <div className="flex justify-between items-center p-4 bg-blue-50 rounded-lg">
                             
                             <div className='flex items-center gap-2'>
                                 <FaBed className='text-blue-600' />
@@ -44,10 +45,26 @@ const FeaturedProperties = ({setSelectedProperty}) => {
                                 <span className='text-gray-600'>{property.baths} Baths</span>
                              </div>
                             <div className='flex items-center gap-2'>
-                                    <FaRuler className='text-blue-600' />
-                                    <span className='text-gray-600'>{property.sqft} sqft</span>
-
+                                <FaRuler className='text-blue-600' />
+                                <span className='text-gray-600'>{property.sqft} sqft</span>
                             </div>
+                         
+                        </div>
+                        <div>
+                               <button
+                                onClick={(e) => {
+                                    e.stopPropagation();
+                                    trackEvent(
+                                    "enquire_now_clicked",
+                                    "Property",
+                                    property.title
+                                    );
+                                    setSelectedProperty(property);
+                                    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+                                }}
+                                className="w-full mt-4 bg-blue-600 text-white px-4 py-3 rounded-xl font-semibold hover:bg-blue-700 transition-colors">
+                                Enquire Now
+                            </button>
                         </div>
                     </div>
                 </div>
