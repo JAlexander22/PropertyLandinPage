@@ -1,5 +1,5 @@
 import React from 'react'
-import homeImage from "../../public/homeImage.jpg";
+import homeImage from "../assets/homeImage.jpg";
 import { FaLocationDot } from 'react-icons/fa6';
 
 const Home = () => {

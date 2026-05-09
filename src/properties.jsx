@@ -1,15 +1,15 @@
-import image1 from "../public/img1.jpg";
-import image2 from "../public/img2.jpg";
-import image3 from "../public/img3.jpg";
-import image4 from "../public/img4.jpg";
-import image5 from "../public/img5.jpg";
-import image6 from "../public/img6.jpg";
-import image7 from "../public/img7.jpg";
-import image8 from "../public/img8.jpg";
-import image9 from "../public/img9.jpg";
-import image10 from "../public/img10.jpg";
-import image11 from "../public/img11.jpg";
-import image12 from "../public/img12.jpg";
+import image1 from "../src/assets/img1.jpg";
+import image2 from "../src/assets/img2.jpg";
+import image3 from "../src/assets/img3.jpg";
+import image4 from "../src/assets/img4.jpg";
+import image5 from "../src/assets/img5.jpg";
+import image6 from "../src/assets/img6.jpg";
+import image7 from "../src/assets/img7.jpg";
+import image8 from "../src/assets/img8.jpg";
+import image9 from "../src/assets/img9.jpg";
+import image10 from "../src/assets/img10.jpg";
+import image11 from "../src/assets/img11.jpg";
+import image12 from "../src/assets/img12.jpg";
 
 const properties = [
   {
