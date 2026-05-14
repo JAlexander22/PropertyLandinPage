@@ -1,7 +1,7 @@
 import ReactGA from "react-ga4";
 
 export const initGA = () => {
-  ReactGA.initialize("G-XXXXXXXXXX"); //Needs to be replaces with MeasurmentID obtained form Google Analytics
+  ReactGA.initialize("G-FT92YGKSQT"); //Needs to be replaces with MeasurmentID obtained form Google Analytics
 };
 
 export const trackEvent = (action, category, label) => {
